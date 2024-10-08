@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design solutions </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="menu" class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <p><b>Design Solutions</b></p>
+  </header>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <nav id="nav">
+    <a class="backcolor1" href="#dining" onclick="navi(0)">Dining</a>
+    <a class="backcolor2" href="#bedroom" onclick="navi(1)">Bedroom</a>
+    <a class="backcolor1" href="#custom" onclick="navi(2)">Custom</a>
+    <a class="backcolor2" href="#living" onclick="navi(4)">Living</a>
+    <a class="backcolor1" href="#office" onclick="navi(3)">Office</a>
+  </nav>
+  <h1 class="homeanimation">Replace your space<br>with stunning furniture <br>designs</h1>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <section class="content" id="dining">
+    <div class="container1">
+      <div class="slides1">
+          <div>
+            <div class="image1"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/dining1.jpeg" alt=""></div>
+              <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A beautifully crafted rounded dining table with a smooth finish, designed for intimate gatherings and compact spaces.
+                <br>Price: ₹18,000.
+               </center></h5>
+            </div>
+      </div>
+      <div class="slides1">
+          <div>
+            <div class="image1"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/dining2.jpeg" alt=""></div>
+              <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A modern black dining table paired with sofa-like cushioned chairs, offering both comfort and elegance.
+                <br>Price: ₹25,000.
+            </center></h5>
+            </div>
+      </div>
+      <div class="slides1">
+        <div>
+        <div class="image1"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/dining3.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A sleek wooden dining table with a smooth, polished surface and sturdy legs, ideal for family meals or gatherings.
+           <br> Price: ₹15,000</center></h5>
+        </div>
+      </div>
+      <br><br>
+      <div style="text-align: center;">
+        <span class="dots1"></span>
+        <span class="dots1"></span>
+        <span class="dots1"></span>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="bedroom">
+    <div class="container2">
+      <div class="slides2">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/bedroom1.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A luxurious white bed with a minimalist design, offering a clean and modern look. Crafted with a sturdy frame.
+           <br> Price: ₹35,000</center></h5>
+        </div>
+      </div>
+      <div class="slides2">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/bedroom2.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A stylish bedroom furniture set featuring an attached sofa bed, combining comfort and practicality.
+           <br> Price: ₹40,000</center></h5>
+        </div>
+      </div>
+      <div class="slides2">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/bedroom3.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A sleek and spacious wardrobe with a full-length mirror, combining storage and style. Ideal for bedrooms.
+           <br> Price: ₹30,000</center></h5>
+        </div>
+      </div>
+    <br><br>
+      <div style="text-align: center;">
+        <span class="dots2"></span>
+        <span class="dots2"></span>
+        <span class="dots2"></span>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="custom">
+    <div class="box" style="margin-top: 7%; margin-left: 1%;">
+      <span class="boxline"></span>
+      <form action="connect1.php" method="post">
+        <h3>Custom</h3>
+        <hr>
+        <div class="inputbox">
+          <input type="text" placeholder="Name" required="required" name="name" autocomplete="off">
+          <hr class="hr">
+        </div>
+        <div class="inputbox">
+          <input type="text" placeholder="Email-id" required="required" name="email" autocomplete="off">
+          <hr class="hr">
+        </div>
+        <h4>Furniture for:-</h4>
+        <div class="options">
+          <br>
+          Living <input type="radio" name="options" value="living">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Bedroom<input type="radio" name="options" value="bedroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Dining <input type="radio" name="options" value="dining"><br><br>
+          Office <input type="radio" name="options" value="office">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Others <input type="radio" name="options" value="others">
+        </div>
+        <div class="content">
+          <br>
+          <textarea cols="40" rows="10" name="message" autocomplete="off">Write your message here</textarea>
+        </div>
+        <center>
+          <div>
+            <input type="submit" value="submit" class="center" onclick="submitbtn()">
+          </div>
+        </center>
+      </form>
+    </div>
+  </section>
+  <section class="content" id="living">
+    <div class="container3">
+      <div class="slides3">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/living1.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A sturdy wooden cupboard featuring ample storage space with multiple shelves and compartments. 
+           <br> Price: ₹25,000</center></h5>
+        </div>
+      </div>
+      <div class="slides3">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/living2.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A versatile sofa with built-in cupboard facilities, offering both seating comfort and convenient storage.
+           <br> Price: ₹50,000</center></h5>
+        </div>
+      </div>
+      <div class="slides3">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/living3.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A simple sofa with an integrated small cupboard, providing a perfect blend of seating and storage.
+           <br> Price: ₹30,000</center></h5>
+        </div>
+      </div>
+    <br><br>
+      <div style="text-align: center;">
+        <span class="dots3"></span>
+        <span class="dots3"></span>
+        <span class="dots3"></span>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="office">
+    <div class="container4">
+      <div class="slides4">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/office1.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A modern meeting table paired with comfortable chairs, designed for collaborative discussions and teamwork. 
+           <br> Price: ₹45,000</center></h5>
+        </div>
+      </div>
+      <div class="slides4">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/office2.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A pair of study chairs designed for comfort and style, perfect for creating an inviting study area in any room.
+           <br> Price: ₹12,000</center></h5>
+        </div>
+      </div>
+      <div class="slides4">
+        <div>
+          <div class="image2"><img style="width: 60%; height: 400px; margin-left: 20%;" src="images/office3.jpeg" alt=""></div>
+          <h5 style="width: 60%; height: 10px; margin-left: 20%;color:rgb(60, 59, 58)"><center>A stylish study setup featuring a single chair with a matching table, perfect for focused work or study sessions. 
+           <br> Price: ₹15,000</center></h5>
+        </div>
+      </div>
+    <br><br>
+      <div style="text-align: center;">
+        <span class="dots4"></span>
+        <span class="dots4"></span>
+        <span class="dots4"></span>
+      </div>
+    </div>
+  </section>
+  <menu id="menuli"></menu>
+  <script src="script.js"></script>
+</body>
+</html>
