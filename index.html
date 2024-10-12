@@ -101,36 +101,58 @@
   <section class="content" id="custom">
     <div class="box" style="margin-top: 7%; margin-left: 1%;">
       <span class="boxline"></span>
-      <form action="connect1.php" method="post">
-        <h3>Custom</h3>
-        <hr>
-        <div class="inputbox">
-          <input type="text" placeholder="Name" required="required" name="name" autocomplete="off">
-          <hr class="hr">
-        </div>
-        <div class="inputbox">
-          <input type="text" placeholder="Email-id" required="required" name="email" autocomplete="off">
-          <hr class="hr">
-        </div>
-        <h4>Furniture for:-</h4>
-        <div class="options">
-          <br>
-          Living <input type="radio" name="options" value="living">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Bedroom<input type="radio" name="options" value="bedroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Dining <input type="radio" name="options" value="dining"><br><br>
-          Office <input type="radio" name="options" value="office">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Others <input type="radio" name="options" value="others">
-        </div>
-        <div class="content">
-          <br>
-          <textarea cols="40" rows="10" name="message" autocomplete="off">Write your message here</textarea>
-        </div>
-        <center>
-          <div>
-            <input type="submit" value="submit" class="center" onclick="submitbtn()">
-          </div>
-        </center>
-      </form>
+<form id="form1" action="connect1.php" method="post">
+  <h3>Custom</h3>
+  <hr>
+  <input type="hidden" name="access_key" value="f1a1cc89-21d5-4669-abaf-e64fa1998767">
+  <div class="inputbox">
+      <input type="text" placeholder="Name" required="required" name="name" autocomplete="off">
+      <hr class="hr">
+  </div>
+  <div class="inputbox">
+      <input type="text" placeholder="Email-id" required="required" name="email" autocomplete="off">
+      <hr class="hr">
+  </div>
+  <h4>Furniture for:-</h4>
+  <div class="options">
+      <br>
+      Living <input type="radio" name="options" value="living">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Bedroom<input type="radio" name="options" value="bedroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Dining <input type="radio" name="options" value="dining"><br><br>
+      Office <input type="radio" name="options" value="office">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Others <input type="radio" name="options" value="others">
+  </div>
+  <div class="content">
+      <br>
+      <textarea cols="40" rows="10" name="message" autocomplete="off">Write your message here</textarea>
+  </div>
+  <center>
+      <div>
+          <input type="submit" value="Submit" class="center" onclick="submitBothForms(); return false;">
+      </div>
+  </center>
+</form>
+<form id="form2" action="https://api.web3forms.com/submit" method="post" style="display: none;">
+  <input type="hidden" name="access_key" value="d4d3097d-eee8-46b7-8dae-bc07b1bbac15">
+  <input type="hidden" name="name" value="">
+  <input type="hidden" name="email" value="">
+  <input type="hidden" name="options" value="">
+  <input type="hidden" name="message" value="">
+</form>
+<script>
+  function submitBothForms() {
+      const form1 = document.getElementById('form1');
+      const form2 = document.getElementById('form2');
+      form2.name.value = form1.name.value;
+      form2.email.value = form1.email.value;
+      form2.message.value = form1.message.value;
+      form2.options.value = form1.querySelector('input[name="options"]:checked').value;
+      form1.submit();
+      setTimeout(function() {
+          form2.submit();
+      }, 10);
+  }
+  </script>
     </div>
   </section>
   <section class="content" id="living">

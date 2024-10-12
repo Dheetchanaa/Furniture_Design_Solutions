@@ -11,7 +11,6 @@ if($conn->connect_error){
     values(?, ?, ?, ?)");
     $stmt->bind_param("ssss",$name, $email, $options, $message);
     $stmt->execute();
-    echo"submitted successfully...";
     $stmt->close();
     $conn->close(); 
 }

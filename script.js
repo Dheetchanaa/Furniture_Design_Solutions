@@ -1,12 +1,8 @@
-function submitbtn() {
-  alert("Successfully submitted...");
-}
 var menulist = [
     { name: "Home", link: "http://localhost/Furniture%20Design%20Solutions/index.html"},
     { name: "About", link: "http://localhost/Furniture%20Design%20Solutions/about.html" },
     { name: "Service", link: "http://localhost/Furniture%20Design%20Solutions/service.html" },
-    { name: "Contact", link: "http://localhost/Furniture%20Design%20Solutions/contact.html" },
-    { name: "Owner", link:"http://localhost/Furniture%20Design%20Solutions/storage.php"}
+    { name: "Contact", link: "http://localhost/Furniture%20Design%20Solutions/contact.html" }
   ];
   const menu = document.getElementById("menu");
   const menuli = document.getElementById("menuli");

@@ -466,3 +466,14 @@
   #custom .box form .center:hover {
     background-color: rgb(207, 203, 203)
   }
+  .center1{
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+    font-size: large;
+    text-decoration: none;
+    color : rgb(59, 57, 57)
+  }
