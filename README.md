@@ -1,0 +1,1 @@
+Created a dynamic and visually engaging website by employing HTML, CSS, JavaScript and PHP on GitHub. My design solutions website showcases a seamless integration of these technologies, resulting in an interactive user experience.
